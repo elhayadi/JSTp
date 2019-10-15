@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercice 2 </title>
+</head>
+<body id="form">
+
+</body>
+ <script type="text/javascript" >
+ document.write('<form><fieldset><input type="text" id="champ" name="champ"></fieldset><button type="button" onclick="myFunc()"  >Ok</button><h4 id="lab" style =" color: red ; "></h4></form>');
+ 	function myFunc()
+{
+var msg= "Erreur!!!";
+           if(document.getElementById("champ").value==''){
+           document.getElementById("lab").textContent = msg; 
+           alert("formulaire non envoyé");
+           }else{
+           	alert("formulaire est envoyé avec succès");
+           }
+}
+
+
+
+
+</script>
+</html>
